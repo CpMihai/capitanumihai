@@ -6,58 +6,54 @@
         <title>Portofolio</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mogra&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <style>
-            html,body{
-                min-height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                background-color: #434343;
-                background-image:linear-gradient(#434343, #282828);
-                min-height: 100vh;
-            }
-            .container{
-                background-color: transparent;
-                background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
-                min-width: 100vw;
-                margin: 0;
-                background-size:50px 50px;
-            }
-            #main{
-                width: 70%;
-                margin: 0 auto;
-                background-color: transparent;
-                border:0.2px solid white;
-                border-radius:50px;
-                min-height: 100vh;
-                padding: 10px; 
-            }
-            .title{
-                color: darkgray;
-                text-align: center;
-                margin: 10px 0;
-            }
-            #header{
-                height: 100px;
-            }
-            #footer{
-                height: 100px;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
-            <div id="header"></div>
+            <div id="header">
+                <ul class="header-menu">
+                    <li><a href="/">Home</a></li>
+                    <!-- <li><a href="javascript:void(0)">work</a></li> -->
+                    <li><a href="javascript:void(0)">about</a></li>
+                    <li><a href="javascript:void(0)">contact</a></li>
+                    <li id="darkmode-switch"><i id="switch-icon" class="bi bi-moon-fill"></i></li>
+                </ul>
+            </div>
             
             <div id="main">
-                <h1 class="title">Hi. Welcome to my portfolio.</h1>
-                <p><em>Under contruction!</em></p>
+                <h1 class="title">Portfolio</h1>
+                <div id="projects">
+                    <div id="pr-js" class="pr">
+                        <div class="pr-header">
+                            <img src="icons/js.png" ><span>Projects</span>
+                        </div>
+                        <div class="pr-body">
+                            <p>JavaScript Algorithms and Data Structures</p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">Role Playing Game</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="pr-php" class="pr">
+                        <div class="pr-header">
+                            <img src="icons/php.png" ><span>Projects</span>
+                        </div>
+                        <div class="pr-body"></div>
+                    </div>
+                </div>
             </div>
-            <div id="footer"></div>
+            <div id="footer">
+                Copyright @ 2016 Capitanu Mihai
+            </div>
         </div>
+        <script src="/js/darkmode.js"></script>
     </body>
 </html>
